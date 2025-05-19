@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WECARE || FRONTEND PROJECT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- navbar -->
+     <header class="header" id="header">
+        <nav class="navbar">
+
+            <div class="navbar_logo">
+                <h1>WE <span>CARE</span></h1>
+             </div>
+
+             <div class="navbar_links">
+                <a href="#home" id="home-btn">Home</a> 
+                <a href="#about_section">About</a>
+                <a href="#contact_sec">Contact</a>
+                <a href="#dept_section">Departments</a>
+             </div>
+
+             <div class="navbar_btn">
+                <button>Book Appointment</button>
+             </div>
+             <div class="navbar_btn">
+  <div class="menu-icon" id="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+        </nav>
+    </header>
+
+    <!-- main section -->
+     <section class="mainsection" id="mainsection">
+        <div class="main_content">
+            <h3>WELCOME TO</h3>
+            <h1>WE<span>CARE</span></h1>
+        </div>
+        <div class="main_image">
+            <img src="./project_images/main_image.jpg" alt="main image of doctor">
+        </div>
+     </section>
+
+
+     <!-- about us section  -->
+      <section class="about_section" id="about_section">
+
+        <div class="about_sec_img">
+            <img src="./project_images/doct1.jpg" alt="doctor">
+        </div>
+
+        <div class="about_content">
+            <h1>ABOUT US</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste molestias sequi tempore, commodi ut consequatur accusamus. Quaerat repellendus, deleniti enim quos asperiores itaque, blanditiis facere consectetur voluptatibus cum non!
+           Asperiores cum laudantium dolore suscipit odio esse culpa, temporibus nam eaque vel, eligendi adipisci. Eligendi aperiam adipisci neque maxime ad numquam totam, sequi odio exercitationem? Deserunt adipisci beatae minima suscipit.
+           Sunt corporis quo animi quas impedit ratione a vel unde recusandae corrupti veritatis nulla, sit aliquam id qui libero, deleniti blanditiis accusamus distinctio aspernatur quod dicta necessitatibus! Possimus, quibusdam voluptatibus.
+           Aspernatur voluptatibus aut atque cumque itaque sed id maiores? Nam odio dignissimos, qui nesciunt quibusdam ab inventore illo facilis doloremque minus ipsam, itaque voluptas deleniti libero consectetur error maiores consequatur?
+           Inventore enim illo officia voluptatem maxime numquam aperiam dignissimos possimus aspernatur temporibus veniam necessitatibus, odio iure sunt pariatur hic nihil natus consequuntur repudiandae vero, totam ipsam corrupti, nulla asperiores. Provident.</p>
+        </div>
+      </section>
+
+      <!-- expert doctors section -->
+
+      <section class="doctors_sec" id="doctors_sec">
+
+        <div class="expert_title">
+          <h1>EXPERT DOCTORS</h1>
+        </div>
+
+        <div class="expert_doct_cards">
+            <div class="doct1">
+            <img src="./project_images/expert doct1.jpg" alt="doctor1">
+            <h4>Cardiology</h4>
+            </div>
+            <div class="doct1">
+            <img src="./project_images/expert doct2.jpg" alt="doctor2">
+            <h4>Radiology</h4>
+            </div>
+            <div class="doct1">
+            <img src="./project_images/expert doct3jpg.jpg" alt="doctor3">
+            <h4>Gynecology</h4>
+            </div>
+        </div>
+      </section>
+
+      <!-- departmets section -->
+       <section class="dept_section" id="dept_section">
+
+        <div class="dept_title">
+            <h1>DEPARTMENTS</h1>
+        </div>
+
+        <div class="div_sec_cards">
+            <div class="dep_sec_img">
+                <img src="./project_images/cardiology_icon.svg" alt="dept1 logo">
+                <h4><a href="#">see more</a></h4>
+            </div>
+           
+
+            <div class="dep_sec_img">
+                <img src="./project_images/diabetes.webp" alt="dept2 logo">
+                <h4><a href="#">see more</a></h4>
+            </div>
+            
+
+            <div class="dep_sec_img">
+                <img src="./project_images/gynecology-icon.svg" alt="dept3 logo">
+                <h4><a href="#">see more</a></h4>
+            </div>
+            
+
+            <div class="dep_sec_img">
+                <img src="./project_images/teeth.png" alt="dept4 logo">
+                <h4><a href="#">see more</a></h4>
+            </div>
+        </div>
+       </section>
+
+       <!-- contact us section -->
+        <section class="contact_sec" id="contact_sec">
+            <h1 class="contact-title">CONTACT US</h1>
+            <div class="contact_form">
+                <form action="" class="contact-form">
+                    <div class="contact-inputs">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="number" placeholder="Enter your mobile number" required>
+                </div>
+                    <div class="contact_msg">
+                        <textarea name="" id="textarea" class="textarea" placeholder="Enter your message" rows="10" cols="10" required></textarea>
+                        <button type="submit" class="submit-btn-contact">Click here to submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+       <footer class="footer">
+
+           <div class="footer_links">
+            <a href="#header">HOME</a>
+            <a href="#about_section">ABOUT</a>
+            <a href="#contact_sec">CONTACT</a>
+            <a href="#dept_section">DEPARTMENTS</a>
+           </div> 
+          
+       </footer>
+       <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navbarLinks = document.querySelector('.navbar_links');
+
+  menuIcon.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
